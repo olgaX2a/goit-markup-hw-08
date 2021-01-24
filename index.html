@@ -23,7 +23,8 @@
             ><span class="logo__text--accent">Web</span>Studio</span
           ></a
         >
-        <div class="header__menu">
+
+        <div class="header__menu" data-burger>
           <nav class="navigation">
             <ul class="navigation__list list">
               <li class="navigation__item">
@@ -60,11 +61,26 @@
             </ul>
           </address>
         </div>
-        <!-- <button class="menu__button" type="button">
-          <svg class="burger__icon--open">
+        <button class="menu__button--open" type="button" data-burger-open>
+          <svg
+            class="burger__icon"
+            width="24"
+            height="16"
+            aria-label="открыть навигационное меню"
+          >
             <use href="./images/burger/sprite-burger.svg#burger"></use>
           </svg>
-        </button> -->
+        </button>
+        <button class="menu__button--close" type="button" data-burger-close>
+          <svg
+            class="burger__icon"
+            width="18.67"
+            height="18.67"
+            aria-label="открыть навигационное меню"
+          >
+            <use href="./images/burger/sprite-burger.svg#burger-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main">
@@ -787,5 +803,6 @@
 
     <!-- Scripts -->
     <script src="./js/modal.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>
