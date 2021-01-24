@@ -1,0 +1,106 @@
+.portfolio {
+  font-family: $main-font;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.portfolio__list {
+  font-family: $main-font;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    margin-left: -30px;
+  }
+}
+
+.portfolio__item {
+  background-color: rgba(255, 255, 255, 1);
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    margin-left: 30px;
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: 370px;
+  }
+}
+.portfolio__content--wrapper {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
+}
+
+.portfolio__project {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-color;
+  margin-bottom: 4px;
+}
+
+.portfolio__department {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+
+.portfolio__link {
+  display: block;
+  transition: box-shadow 250ms $timing-function;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio__img--wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__overlay--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $accent-color;
+  opacity: 0.9;
+  transform: translateY(100%);
+  transition: 250ms $timing-function;
+
+  .portfolio__link:hover &,
+  .portfolio__link:focus & {
+    transform: translateY(0%);
+  }
+}
+
+.portfolio__overlay {
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,26 @@
+.logo {
+  font-family: $logo-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(28.18 / 24);
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: calc(30.52 / 26);
+  }
+}
+.logo__text {
+  &--accent {
+    color: $accent-color;
+  }
+  &--light-theme {
+    color: $title-color;
+  }
+  &--dark-theme {
+    color: rgba(255, 255, 255, 1);
+  }
+}
