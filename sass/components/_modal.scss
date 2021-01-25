@@ -2,7 +2,7 @@
   position: relative;
   top: 50%;
   left: 50%;
-
+  z-index: 50;
   max-width: 450px;
   min-height: 609px;
   padding: 40px;
@@ -136,10 +136,15 @@
   color: rgba(255, 255, 255, 1);
   margin-top: 30px;
 }
-
+.user-policy--wrapper {
+  display: flex;
+  justify-content: center;
+}
 .user-policy__text {
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   color: $text-color;
   font-weight: 400;
   font-size: 12px;

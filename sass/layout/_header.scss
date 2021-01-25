@@ -9,7 +9,6 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
-
   & .container {
     display: flex;
     align-items: center;
@@ -39,6 +38,7 @@
   .header {
     position: sticky;
     top: 0px;
+    z-index: 20;
     background-color: rgba(255, 255, 255, 1);
   }
 }
@@ -58,6 +58,7 @@
       width: 100vw;
       margin-left: -50vw;
       position: absolute;
+
       padding-top: 60px;
       padding-bottom: 60px;
       top: 100%;

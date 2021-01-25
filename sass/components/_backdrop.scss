@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-
+  z-index: 30;
   opacity: 1;
   transform: opacity 250ms $timing-function;
 }

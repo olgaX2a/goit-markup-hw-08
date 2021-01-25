@@ -785,17 +785,20 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <input
-            type="checkbox"
-            name="user-policy"
-            value="accept-policy"
-            class="modal__check visually-hidden"
-            id="user-policy"
-          />
-          <label for="user-policy" class="user-policy__text"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="#" class="user-policy__link">Условия договора</a>
-          </label>
+          <div class="user-policy--wrapper">
+            <input
+              type="checkbox"
+              name="user-policy"
+              value="accept-policy"
+              class="modal__check visually-hidden"
+              id="user-policy"
+            />
+            <label for="user-policy" class="user-policy__text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="user-policy__link">Условия договора</a>
+            </label>
+          </div>
+
           <button type="submit" class="modal__submit-btn btn">Отправить</button>
         </form>
       </div>

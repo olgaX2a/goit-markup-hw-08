@@ -201,6 +201,7 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+  z-index: 30;
   opacity: 1;
   transform: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -209,6 +210,7 @@ img {
   position: relative;
   top: 50%;
   left: 50%;
+  z-index: 50;
   max-width: 450px;
   min-height: 609px;
   padding: 40px;
@@ -343,9 +345,16 @@ img {
   margin-top: 30px;
 }
 
+.user-policy--wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .user-policy__text {
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   color: #757575;
   font-weight: 400;
   font-size: 12px;
@@ -428,6 +437,7 @@ img {
   .header {
     position: sticky;
     top: 0px;
+    z-index: 20;
     background-color: white;
   }
 }
