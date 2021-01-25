@@ -260,16 +260,21 @@ img {
     flex-direction: column;
     justify-content: center;
     width: 100vw;
+    margin-left: -50vw;
     position: absolute;
     padding-top: 60px;
     padding-bottom: 60px;
     top: 100%;
+    left: 50%;
     background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
 
 .menu__button--open, .menu__button--close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: transparent;
   margin-left: auto;
@@ -292,7 +297,7 @@ img {
 }
 
 .is-open ~ .menu__button--close {
-  display: block;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
