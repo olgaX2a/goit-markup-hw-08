@@ -1061,6 +1061,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__address--wrapper {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1256,6 +1257,12 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__content--wrapper.expanded {
+    padding-bottom: 56px;
+  }
 }
 
 .portfolio__project {

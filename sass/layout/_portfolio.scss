@@ -45,6 +45,11 @@
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__content--wrapper.expanded {
+    padding-bottom: 56px;
+  }
+}
 
 .portfolio__project {
   font-size: 18px;
